@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.page-bg {
+    background: url('img/background.png');
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+}
+
+#content {
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#div {
+    width: 50vw;
+    margin: 10px auto 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #372128e8;
+    
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 8em;
+    color: #d3ec6d;
+    text-shadow: 5px 5px #8e6359;
+    margin: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: 2px 2px #8e6359;
+    margin: 20px;
+    text-align: center;
+}
+
+p {
+    color: #ffc1a9;
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+#nav {
+    display: flex;
+    background-color: #633029ba;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.page li:hover, .page .active{
+    background-color: #d66826;
+    border-bottom: 4px solid #b43e2d;
+}
+
+.page li:hover {
+    cursor: pointer;
+}
+
+.page li {
+    font-size: 1.1em;
+    padding: 20px;
+    display: inline-block;
+    color: #ffffff;
+    margin: 2px;
+}
+
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#list>div {
+    flex: 0 30%;
+    background-color: #964e3d57;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#list li {
+    padding: 1px;
+    margin: 3px;
+    color: #ffc1a9;
+    font-size: 1.2em;
+}
+
+h3 {
+    color: #d66826;
+    font-size: 1.7em;
+}
+
+#contactpagediv {
+    display: flex;
+    justify-content: space-around;
+}
+
+#infodiv {
+    margin: 10px;
+    width: 50%;
+}
+
+#imgdiv {
+    margin: 20px;
+    width: 40%;
+}
+
+#image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+    #div {
+        width: 80vw;
+        margin: 10px auto 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #372128e8;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-size: 3em;
+        color: #d3ec6d;
+        text-shadow: 2px 2px #8e6359;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        color: #ffffff;
+        text-shadow: 1px 1px #8e6359;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    p {
+        color: #ffc1a9;
+        padding: 10px;
+        font-size: 1em;
+        margin: 5px;
+    }
+    
+    #nav {
+        display: flex;
+        background-color: #633029ba;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .page li:hover, .page .active{
+        background-color: #d66826;
+        border-bottom: 4px solid #b43e2d;
+    }
+    
+    .page li:hover {
+        cursor: pointer;
+    }
+    
+    .page li {
+        font-size: 0.9em;
+        padding: 10px;
+        display: inline-block;
+        color: #ffffff;
+        margin: 2px;
+    }
+    
+    #list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    #list>div {
+        flex: 0 30%;
+        background-color: #964e3d57;
+        text-align: center;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    
+    #list li {
+        padding: 0.5px;
+        margin: 1px;
+        color: #ffc1a9;
+        font-size: 1em;
+    }
+    
+    h3 {
+        color: #d66826;
+        font-size: 1.2em;
+    }
+    
+    #contactpagediv {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #infodiv {
+        margin: 5px;
+        width: 40%;
+    }
+
+    #infodiv p {
+        font-size: 0.9em;
+    }
+    
+    #imgdiv {
+        margin: 10px;
+        width: 40%;
+    }
+    
+    #image {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
